@@ -31,7 +31,6 @@ const { count: totalAppointments } = await supabase
 const today = new Date()
 today.setHours(0, 0, 0, 0)
 Member 4 Dashboard & Analytics
-src/lib/analytics.ts
 const tomorrow = new Date(today)
 tomorrow.setDate(tomorrow.getDate() + 1)
 const { count: todayAppointments } = await supabase
