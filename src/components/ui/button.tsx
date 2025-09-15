@@ -1,19 +1,21 @@
- import React from 'react'
- import { cn } from '@/lib/utils'
- interface ButtonProps extends React.ButtonHTMLAttributes&lt;HTMLButtonElement&gt; {
+import React from 'react'
+import { cn } from '@/lib/utils'
+
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary' | 'outline' | 'ghost'
   size?: 'sm' | 'md' | 'lg'
- }
- export const Button = React.forwardRef&lt;HTMLButtonElement, ButtonProps&gt;(
-  ({ className, variant = 'primary', size = 'md', ...props }, ref) =&gt; {
+}
+
+export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
+  ({ className, variant = 'primary', size = 'md', ...props }, ref) => {
     return (
-      &lt;button
-    className={cn(
-          'inline-flex items-center justify-center rounded-md font-medium transition-colo
+      <button
+        className={cn(
+          'inline-flex items-center justify-center rounded-md font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none',
           {
             'bg-green-600 text-white hover:bg-green-700': variant === 'primary',
             'bg-gray-100 text-gray-900 hover:bg-gray-200': variant === 'secondary',
-            'border border-gray-300 bg-transparent hover:bg-gray-100': variant === 'outli
+            'border border-gray-300 bg-transparent hover:bg-gray-100': variant === 'outline',
             'hover:bg-gray-100 text-gray-900': variant === 'ghost',
           },
           {
@@ -25,8 +27,8 @@
         )}
         ref={ref}
         {...props}
-      /&gt;
+      />
     )
   }
- )
- Button.displayName = 'Button'
+)
+Button.displayName = 'Button'
