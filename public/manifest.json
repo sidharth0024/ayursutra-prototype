@@ -1,0 +1,46 @@
+{
+  "name": "AyurSutra - Panchakarma Management System",
+  "short_name": "AyurSutra",
+  "description": "Modern Ayurvedic clinic management with AI-powered scheduling and patient management",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#16a34a",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "categories": [
+    "health",
+    "medical",
+    "productivity",
+    "business"
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "screenshot-narrow.png",
+      "sizes": "640x1136",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ],
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-US"
+}
